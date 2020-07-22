@@ -2,8 +2,7 @@ package test;
 // This specific Java code was given by CodeHS, to help with the random number aspect of the program
 import java.util.*;
 
-public class Randomizer
-{
+public class Randomizer{
 
  public static Random theInstance = null;
  
@@ -12,10 +11,10 @@ public class Randomizer
  }
  
  public static Random getInstance(){
-  if(theInstance == null){
-   theInstance = new Random();
-  }
-  return theInstance;
+	  if(theInstance == null){
+	     theInstance = new Random();
+	  }
+	  return theInstance;
  }
  
  public static boolean nextBoolean(){

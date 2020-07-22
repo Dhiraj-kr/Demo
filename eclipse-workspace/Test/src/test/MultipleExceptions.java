@@ -1,7 +1,5 @@
 package test;
 
-import java.io.IOException;
-
 public class MultipleExceptions {
 	 
     public static void main(String[] args)

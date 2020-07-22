@@ -1,6 +1,7 @@
 package sort;
 
 /* Java program for Merge Sort */
+//See Merge Sort interative way
 class MergeSort 
 { 
 	// Merges two subarrays of arr[]. 
@@ -20,15 +21,14 @@ class MergeSort
 		for (int i=0; i<n1; ++i) 
 			L[i] = arr[l + i]; 		//i will go from l to m
 		for (int j=0; j<n2; ++j) 
-			R[j] = arr[m + 1+ j]; 	//so j will start from m+1
-
+			R[j] = arr[m + 1+ j]; 	//j will start from m+1 till r
 
 		/* Merge the temp arrays */
 
 		// Initial indexes of first and second subarrays 
 		int i = 0, j = 0; 
 
-		// Initial index of merged subarry array 
+		// Initial index of merged subarray array 
 		int k = l; 
 		while (i < n1 && j < n2) 
 		{ 

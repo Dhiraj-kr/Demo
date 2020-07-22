@@ -13,14 +13,13 @@ package test;
 	        return new ArrayList<>();
 	    }
 
-	    //Wildcards in Java work similarly to Scala existential types. 
 	    //If I return a List<? extends Animal> it explicitly means that this is a list of some Animal class, 
 	    //but the caller does not know if it's a list of List<Dog>, List<Cat>, etc., 
 	    //so the compiler does not allow adding any elements except for null, which is always valid.
 	    void check() {
-	        getAnimals().add(new Dog()); // does not compile
-	        getAnimals().add(new Cat()); // does not compile
-	        getAnimals().add(new Animal()); // does not compile
+	        //getAnimals().add(new Dog()); // does not compile
+	        //getAnimals().add(new Cat()); // does not compile
+	        //getAnimals().add(new Animal()); // does not compile
 	        getAnimals().add(null); // OK
 	    }
 	    

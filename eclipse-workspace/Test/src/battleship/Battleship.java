@@ -1,5 +1,7 @@
-package test;
+package battleship;
 import java.util.Scanner;
+
+import test.Randomizer;
 
 public class Battleship
 {

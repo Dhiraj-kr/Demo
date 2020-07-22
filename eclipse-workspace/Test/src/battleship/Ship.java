@@ -1,4 +1,4 @@
-package test;
+package battleship;
 public class Ship
 {
     /* Instance Variables */

@@ -7,7 +7,7 @@ class GFG
     // Function to generate a short url from integer ID  
     static String idToShortURL(int n)  
     {  
-        // Map to store 62 possible characters  
+        // Map to store 62 possible characters; 26 lowercase, 26 upper case and 10 numerals
         char map[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".toCharArray();  
       
         StringBuffer shorturl = new StringBuffer();  
