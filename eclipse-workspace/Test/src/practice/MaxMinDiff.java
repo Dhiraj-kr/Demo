@@ -11,9 +11,9 @@ Input : arr = {2, 3, 10, 6, 4, 8, 1}
 Output : 8
 Explanation : The maximum difference is between 10 and 2.
 
-Input : arr = {7, 9, 5, 6, 3, 2}
-Output : 2
-Explanation : The maximum difference is between 9 and 7.
+Input : arr = {7, 9, 1, 6, 3, 5}
+Output : 4
+Explanation : The maximum difference is between 5 and 1.
 
 3,10,1,9,6
 Output= 9-1=8
@@ -29,7 +29,7 @@ Output= 9-1=8
 	
 	private int findMaxMinDiff(int arr[]) {
 		
-		int maxDiff=0;
+		int maxDiff=-1;
 		
 		for(int i=0;i<arr.length;i++) {
 			

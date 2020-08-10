@@ -1,5 +1,7 @@
 package basic;
 
+import test.TestEnum;
+
 interface Parent{
 	void bar();
 	String toString();
@@ -16,6 +18,8 @@ public class Test implements Parent{
 	}
 
 	public static void main(String arg[]) {
+		
+		System.out.println("Test Enum:"+ TestEnum.INSTANCE.getValue());
 		Parent p = new Test();
 		System.out.println(p.toString());
 		//p.foo();//compiler error

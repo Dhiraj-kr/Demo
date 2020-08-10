@@ -6,6 +6,11 @@ public enum TestEnum {
 	
     int value;
     
+    private TestEnum() {		//constructor is by default private also, we can explicitly define also
+    	value=2;
+    	System.out.println("Inside enum constructor");
+    }
+    
     public int getValue() {
         return value;
     }
@@ -13,10 +18,6 @@ public enum TestEnum {
         this.value = value;
     }
     
-    private TestEnum() {
-    	value=2;
-    	System.out.println("Inside enum constructor");
-    }
 }
 class Test2{
 	public static void main(String arg[]) {

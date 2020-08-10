@@ -2,6 +2,7 @@ package date;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class Test {
@@ -24,11 +25,27 @@ public class Test {
 		 
 		System.out.println(anotherDate + " parses as " + random);
 		
+		LocalDateTime dateTime=LocalDateTime.now();
+		LocalDate currentDate = LocalDate.from(dateTime);
+		LocalTime currentTime = LocalTime.from(dateTime);
+
+		//hour, minute and second are int
+		LocalTime timeToSet = LocalTime.of(2, 57, 59);
+		LocalDate dateToSet = LocalDate.of(1700, 12, 31);
+
+		dateTime = LocalDateTime.of(currentDate, timeToSet);
+		dateTime = LocalDateTime.of(dateToSet, currentTime);
+
+		dateTime = LocalDateTime.of(dateToSet, timeToSet);
+
+		
 		anotherDate = "24.05.2016";
 		 
 		random = LocalDate.parse(anotherDate);//Run time Exception
 		 
 		System.out.println(anotherDate + " parses as " + random);
+		
+		
 
 	}
 

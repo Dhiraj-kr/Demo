@@ -11,7 +11,7 @@ public class TestCast {
 	public static void main(String arg[]) {
 		
 		Date date;
-		if (date == null)
+		//if (date == null)	//compile time error, date is null
 			System.out.println("date is null");
 
 		
@@ -24,6 +24,9 @@ public class TestCast {
 			System.out.println("t1's an Object");
 		
 		Animal animal = new Animal();
-		Dog d = (Dog) animal; // compiles but fails later
+		//Dog d = (Dog) animal; // compiles but fails at run time
+		
+		animal = new Dog();
+		Dog d = (Dog) animal; 	//compiles as well as run fine
 	}
 }
