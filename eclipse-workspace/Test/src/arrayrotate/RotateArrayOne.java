@@ -2,6 +2,9 @@ package arrayrotate;
 
 //Java program to rotate an array by d elements 
 
+//Time complexity: O(d*n)
+//Space: O(1)
+
 class RotateArrayOne { 
 	
 	public static void main(String[] args) 

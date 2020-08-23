@@ -1,7 +1,7 @@
 package arrayrotate;
 
 public class RotateByTempArr {
-
+//Time Complexity: O(n), Space Complexity: O(d)
 	public static void main(String[] args) {
 
 		RotateByTempArr rotate = new RotateByTempArr(); 

@@ -21,8 +21,8 @@ import java.util.stream.Collectors;
 import battleship.Point;
 
 public class Test {
-
 	public static void main(String arg[]) {
+		
 		
 	    System.out.format("%f, %1$+020.10f %n", Math.PI);
 
