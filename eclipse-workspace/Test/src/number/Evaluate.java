@@ -4,13 +4,19 @@ import java.util.Stack;
 
 public class Evaluate {
     public static void main(String[] args) {
+    	infixToPostfix("( 2 + ( ( 3 + 4 ) * ( 5 * 6 ) ) )");
+    	evaluate("( 2 ( ( 3 4 + ) ( 5 6 * ) * ) + ) ");	
+    	evaluate2("2 3 4 + 5 6 * * + ");
     }
-    public static evaluate() {
+    
+    public static void evaluate(String str) {
         Stack<String> ops  = new Stack<>();
         Stack<Double> vals = new Stack<>();
         
-        while (!StdIn.isEmpty()) {
-            String s = StdIn.readString();
+        String[] strArr=str.split(" ");
+        
+        for(int i=0;i<strArr.length;i++) {
+            String s = strArr[i];
             if      (s.equals("("))               ;
             else if (s.equals("+"))    ops.push(s);
             else if (s.equals("-"))    ops.push(s);
@@ -34,11 +40,13 @@ public class Evaluate {
         System.out.println(vals.pop());
     }
     
-    public static void evaluate2() {
+    public static void evaluate2(String str) {
         Stack<Integer> stack = new Stack<>();
 
-        while (!StdIn.isEmpty()) {
-            String s = StdIn.readString();
+        String[] strArr=str.split(" ");
+        
+        for(int i=0;i<strArr.length;i++) {
+            String s = strArr[i];
             if      (s.equals("+")) stack.push(stack.pop() + stack.pop());
             else if (s.equals("*")) stack.push(stack.pop() * stack.pop());
             else stack.push(Integer.parseInt(s));
@@ -46,10 +54,14 @@ public class Evaluate {
         System.out.println(stack.pop());
     }
 
-    public static void infixToPostfix(String[] args) {
+    public static void infixToPostfix(String str) {
+    	
         Stack<String> stack = new Stack<>();
-        while (!StdIn.isEmpty()) {
-            String s = StdIn.readString();
+        
+        String[] strArr=str.split(" ");
+        
+        for(int i=0;i<strArr.length;i++) {
+            String s = strArr[i];
             if(s.equals("+")) 
             	stack.push(s);
             else if(s.equals("*")) 

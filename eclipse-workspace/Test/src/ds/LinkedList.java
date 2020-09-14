@@ -45,8 +45,13 @@ public class LinkedList {
 		Node first=head;
 		Node second=first.next;
 		
+		first.next=null;
 		reverse2(first,second);
 		display();
+		
+		System.out.println("\nCount of nodes:"+getCountRec(head));
+		
+		System.out.println("\n3rd Node:"+getNth(head,3));
 	}
 	
 	//1->2->3->4->5
@@ -145,13 +150,12 @@ public class LinkedList {
 	
 	public static void reverse2(Node first, Node second){ 
 		if(second != null) {
+			Node temp=first;
 			first=second;
-			second=second.next;
-			reverse2(first,second);
-			second.next=first;
+			reverse2(first,second.next);
+			second.next=temp;
 		}
 		else {
-			first.next=null;
 			head=first;
 		}
 		
@@ -165,6 +169,30 @@ public class LinkedList {
 			temp=temp.next;
 		}
 	}
+	
+	public static int getCountRec(Node node) 
+    { 
+        // Base case 
+        if (node == null) 
+            return 0; 
+  
+        // Count is this node plus rest of the list 
+        return 1 + getCountRec(node.next); 
+    } 
+
+
+	static int getNth(Node head, int n)  
+	{  
+	    if(head==null) //edge case - if head is null 
+	        return -1; 
+	    //if count equal to n return node.data  
+	    if(n == 1)  
+	    	return head.val;  
+	      
+	    //recursively decrease n and increase  
+	    // head to next pointer  
+	    return getNth(head.next, n - 1);  
+	}  
 
 }
 
