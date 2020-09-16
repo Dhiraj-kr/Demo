@@ -22,7 +22,7 @@ public class FirstNonRepeatingCh {
 		for(char ch: strArr) {
 			++chArr[ch];
 		}
-		for(char ch: strArr) {
+		for(char ch: strArr) {//We are iterating str
 			if(chArr[ch]==1)
 				return ch;
 		}

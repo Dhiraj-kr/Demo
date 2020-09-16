@@ -75,7 +75,6 @@ public class LinkedList {
 	      return -1;
 	}
 	
-	
 	static void getMiddle2()
 	{
 	      Node n=head;
@@ -127,9 +126,8 @@ public class LinkedList {
 	
 	public static void reverse(){ 
 		
-		Node first=head;	//first points to first element
-		Node second=head;
-		second=second.next;	//second points to second element
+		Node first=head;	
+		Node second=head.next;	
 		
 		first.next=null;
 		//Once list gets reversed, it would become last element so it should point to null
@@ -195,5 +193,3 @@ public class LinkedList {
 	}  
 
 }
-
-

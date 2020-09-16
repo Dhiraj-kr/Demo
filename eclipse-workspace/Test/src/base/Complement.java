@@ -12,7 +12,7 @@ package base;
 // in such case, add extra 1 at beginning 
 // For example, 2’s complement of “000” is “1000” (1’s complement of “000” is “111”).
 
-class GFG 
+class Complement 
 { 
 
 	public static void main(String[] args) 
@@ -38,8 +38,6 @@ class GFG
 		} 
 
 		//By below logic, what we did is: Iterate characters starting from end in 1's complement, 
-		//check if first we get 0 then change it to 1 and break from loop and we get the answer
-		//e.g. 00111, 1's=11000 and 2's=11001
 		//if we keep getting 1, we make that 0 and when we get first 0, make that 1 and go out of loop
 		//e.g. n=01000,1'=10111, 2'=11000
 		twos = ones; 
@@ -56,12 +54,13 @@ class GFG
 			} 
 		} 
 
-		// If No break : all are 1 in 1's complement as in 111 or 11111; 
+		// If no break(then i will become -1) i.e. all are 1 in 1's complement as in 111 or 11111; 
 		// in such case, add extra 1 at beginning 
-		// For example, 2’s complement of “000” is “1000” (1’s complement of “000” is “111”).
+		// For example, To get 2’s complement of “000”, (1’s complement of “000” is “111”).
+		// Add 1 then 2’s complement is “1000”
 		if (i == -1) 
 		{ 
-			twos = '1' + twos; 
+			twos = '1' + twos; //1 is already changed to 0 in above loop
 		} 
 
 		System.out.println("1's complement: " + ones);; 

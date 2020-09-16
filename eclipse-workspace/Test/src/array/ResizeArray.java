@@ -1,6 +1,8 @@
 package array;
 
-public class Test {
+import java.lang.reflect.Array;
+
+public class ResizeArray {
 
 		/**
 		* Reallocates an array with a new size, and copies the contents
@@ -11,9 +13,9 @@ public class Test {
 		*/
 		private static Object resizeArray(Object oldArray, int newSize) {
 
-		   int oldSize = java.lang.reflect.Array.getLength(oldArray);
-		   Class elementType = oldArray.getClass().getComponentType();
-		   Object newArray = java.lang.reflect.Array.newInstance(elementType,newSize);
+		   int oldSize = Array.getLength(oldArray);
+		   Class<?> elementType = oldArray.getClass().getComponentType();
+		   Object newArray = Array.newInstance(elementType,newSize);
 		   int preserveLength = Math.min(oldSize,newSize);
 		   
 		   if (preserveLength > 0)

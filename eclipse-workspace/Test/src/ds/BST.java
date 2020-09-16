@@ -34,9 +34,12 @@ public class BST {
 	static Node start;
 
 	public static void main(String[] args) {
-		/*
-		 * add(10); add(7); add(12); add(1); add(6);
-		 */
+		
+		  add(10); 
+		  add(7); 
+		  add(12); 
+		  add(1); 
+		  add(6);
 
 		 //This can result in incorrect BST as we are manually setting left and right. Using below
    		 //way, we can add in binary tree
@@ -46,8 +49,6 @@ public class BST {
 		 //tree.root.left.left= new Node(4); 
 		 //tree.root.left.right= new Node(5);
 			
-		 insert(start,10); insert(start,7); insert(start,12); insert(start,1); insert(start,6);
-		
 		 display(start);	//It will display inorder which will be sorted
 		  
 		 System.out.println("Height of tree:"+getHeight(start));
@@ -92,29 +93,6 @@ public class BST {
 		  }
 	
 	 }
-	 //another way of inserting
-	 public static Node insert(Node root, int data){
-	        if(root==null){
-	        	Node p = new Node();
-	  		  	p.data = data;
-	  		  	if(start==null) {
-	  		  		start=p;
-	  		  	}
-	            return p;
-	        }
-	        else{
-	            Node cur;
-	            if(data<=root.data){
-	                cur=insert(root.left,data);
-	                root.left=cur;
-	            }
-	            else{
-	                cur=insert(root.right,data);
-	                root.right=cur;
-	            }
-	            return root;
-	        }
-	    }
 
 	 //In order
 	 private static void display(Node target) {
@@ -133,22 +111,19 @@ public class BST {
 		  }
 	 }
 	 
+	 //Not Clear
+	 //Write iterative
 	 public static int getHeight(Node root){
     	if(root == null) return -1;	//or 0
 		return (1+Math.max(getHeight(root.left),getHeight(root.right)));
 	}
 	 
-	 static void printLevelOrder() 
-	 { 
-		int h = height(start); 
-		int i; 
-		for (i=1; i<=h; i++) 
-			printGivenLevel(start, i); 
-	} 
-
 	/* Compute the "height" of a tree -- the number of 
 	nodes along the longest path from the root node 
 	down to the farthest leaf node.*/
+	 
+	 //we calculate height of each left and right tree for every node
+	 //then compare and return
 	static int height(Node root) 
 	{ 
 		if (root == null) 
@@ -157,7 +132,9 @@ public class BST {
 		{ 
 			/* compute height of each subtree */
 			int lheight = height(root.left); 
-			int rheight = height(root.right); 
+			int rheight = height(root.right);
+			
+			System.out.println("To return greater of "+(lheight+1)+" or "+(rheight+1)+" for "+root.data);
 			
 			/* use the larger one */
 			if (lheight > rheight) 
@@ -166,18 +143,40 @@ public class BST {
 				return(rheight+1); 
 		} 
 	} 
+	
+	static void printLevelOrder() 
+	 { 
+		int h = height(start); 
+		int i; 
+		for (i=1; i<=h; i++) 
+			printGivenLevel(start, i); 
+	} 
 
 	/* Print nodes at the given level */
+	//called from a loop
+	/*
+	 		10
+	 	 7		12
+	  1
+	     6
+	 */
 	static void printGivenLevel (Node root ,int level) 
 	{ 
 		if (root == null) 
 			return; 
-		if (level == 1) 
-			System.out.print(root.data + " "); 
+		if (level == 1) {						//To print level 3, we go 2 levels down 
+			//by 2 recursive calls for left and right by decrementing level
+			System.out.println(root.data + " "); 
+		}
 		else if (level > 1) 
 		{ 
 			printGivenLevel(root.left, level-1); 
 			printGivenLevel(root.right, level-1); 
 		} 
+	} 
+	
+	static void printGivenLevelIterative (Node root ,int level) 
+	{ 
+		 
 	} 
 }

@@ -256,6 +256,7 @@ public class BinaryDecimal {
             if ('a' <= shortURL.charAt(i) &&  shortURL.charAt(i) <= 'z') { 
             	id = id * 62 + shortURL.charAt(i) - 'a';  //because index of a is 0(97-97)
             	//and b is 1(98-97)
+            	//In hexadecimal, for A, we consider 11, B as 12
             }
             
             if ('A' <= shortURL.charAt(i) &&  shortURL.charAt(i) <= 'Z')  {

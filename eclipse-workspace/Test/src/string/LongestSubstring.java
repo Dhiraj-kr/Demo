@@ -8,6 +8,26 @@ public class LongestSubstring {
  
     private Set<String> subStrList = new HashSet<>();
     private int finalSubStrSize = 0;
+    
+    public static void main(String a[]){
+    	LongestSubstring mls = new LongestSubstring();
+        System.out.println(mls.getLongestSubstr("java2novice"));
+        //First iteration: flags set for {j,a,v} then a comes for which flag is already set
+        //substring-jav
+        // reset flag for all characters before first occurrence of repeating character
+        //i.e j in this case, final: {a,v}; j variable set to 2(index after first occurrence of repeating character)
+
+        //Second iteration: flags set for {2,n,o} then v comes for which flag is already set
+        //substring-va2no
+        //j set to 3
+        
+        //Third iteration: flags set for {i,c,e} then index reach last
+        //substring-a2novice
+        
+        System.out.println(mls.getLongestSubstr("java_language_is_sweet"));
+        System.out.println(mls.getLongestSubstr("java_java_java_java"));
+        System.out.println(mls.getLongestSubstr("abcabcbb"));
+    }
      
     public Set<String> getLongestSubstr(String input){
         //reset instance variables
@@ -54,22 +74,4 @@ public class LongestSubstring {
         return sb.toString();
     }
  
-    public static void main(String a[]){
-    	LongestSubstring mls = new LongestSubstring();
-        System.out.println(mls.getLongestSubstr("java2novice"));
-        //First iteration: flags set for {j,a,v} then a comes for which flag is already set
-        //substring-jav
-        //then reset for j, final: {a,v}; j set to 2(index after first occurence of repeating character)
-
-        //Second iteration: flags set for {2,n,o} then v comes for which flag is already set
-        //substring-va2no
-        //j set to 3
-        
-        //Third iteration: flags set for {i,c,e} then index reach last
-        //substring-a2novice
-        
-        System.out.println(mls.getLongestSubstr("java_language_is_sweet"));
-        System.out.println(mls.getLongestSubstr("java_java_java_java"));
-        System.out.println(mls.getLongestSubstr("abcabcbb"));
-    }
 }

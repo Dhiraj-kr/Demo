@@ -2,7 +2,7 @@ package number;
 
 import java.util.Stack;
 
-public class Evaluate {
+public class PostfixEvaluate {
     public static void main(String[] args) {
     	infixToPostfix("( 2 + ( ( 3 + 4 ) * ( 5 * 6 ) ) )");
     	evaluate("( 2 ( ( 3 4 + ) ( 5 6 * ) * ) + ) ");	

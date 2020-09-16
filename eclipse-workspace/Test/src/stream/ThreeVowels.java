@@ -1,4 +1,4 @@
-package string;
+package stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,7 +17,7 @@ public class ThreeVowels {
 		
 		List<Character> vowels= Arrays.asList('a','e','i','o','u');
 		
-		Optional<String> opStr=lstStr.stream().filter((s)->{
+		Optional<String> opStr=lstStr.stream().filter(s->{
 			char[] chArr=s.toCharArray();
 			for(int i=0;i<chArr.length-2;i++) {
 				if(vowels.contains(chArr[i]) && vowels.contains(chArr[i+1]) && vowels.contains(chArr[i+2]))

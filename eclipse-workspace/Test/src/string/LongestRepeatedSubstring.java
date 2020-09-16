@@ -4,15 +4,14 @@ import java.util.Arrays;
 
 public class LongestRepeatedSubstring {
 
-    // return the longest common prefix of s and t
-    public static String lcp(String s, String t) {
-        int n = Math.min(s.length(), t.length());
-        for (int i = 0; i < n; i++) {
-            if (s.charAt(i) != t.charAt(i))
-                return s.substring(0, i);
-        }
-        return s.substring(0, n);
+	// read in text, replacing all consecutive whitespace with a single space
+    // then compute longest repeated substring
+    public static void main(String[] args) {
+        String s = "JaiHoAlaReAlaJaiHo";
+        s = s.replaceAll("\\s+", " ");
+        System.out.println(lrs(s));
     }
+    
     // return the longest repeated string in s
     public static String lrs(String s) {
 
@@ -35,13 +34,16 @@ public class LongestRepeatedSubstring {
         }
         return lrs;
     }
-
-    // read in text, replacing all consecutive whitespace with a single space
-    // then compute longest repeated substring
-    public static void main(String[] args) {
-        String s = "JaiHoAlaReAlaJaiHo";
-        s = s.replaceAll("\\s+", " ");
-        System.out.println(lrs(s));
+    
+ // return the longest common prefix of s and t
+    public static String lcp(String s, String t) {
+        int n = Math.min(s.length(), t.length());
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) != t.charAt(i))
+                return s.substring(0, i);
+        }
+        return s.substring(0, n);
     }
+
 }
 

@@ -44,9 +44,6 @@ public class Test {
 		random = LocalDate.parse(anotherDate);//Run time Exception
 		 
 		System.out.println(anotherDate + " parses as " + random);
-		
-		
-
 	}
 
 }

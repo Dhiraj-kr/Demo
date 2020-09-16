@@ -16,8 +16,8 @@ public class ReversalRotate {
 	static void leftRotate(int arr[], int d) 
 	{ 
 		int n = arr.length; 			//1,2,3,4,5,6,7
-		rvereseArray(arr, 0, d - 1); 	//2,1,	3,4,5,6,7
-		rvereseArray(arr, d, n - 1); 	//2,1,	7,6,5,4,3
+		rvereseArray(arr, 0, d - 1); 	//2,1,----	
+		rvereseArray(arr, d, n - 1); 	//--7,6,5,4,3
 		rvereseArray(arr, 0, n - 1); 	//3,4,5,6,7,1,2
 	} 
 

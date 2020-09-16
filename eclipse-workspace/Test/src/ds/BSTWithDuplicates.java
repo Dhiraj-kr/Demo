@@ -48,7 +48,7 @@ public class BSTWithDuplicates
 	    // increment count and return 
 	    if (key == node.key) 
 	    { 
-	    (node.count)++; 
+	    	(node.count)++; 
 	        return node; 
 	    } 
 	  

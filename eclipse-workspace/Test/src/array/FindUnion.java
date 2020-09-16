@@ -20,7 +20,7 @@ class FindUnion {
 		int arr3[] = { 1, 2, 2, 2, 3 }; 
         int arr4[] = { 2, 3, 4, 5 }; 
         System.out.println("\nUnion(Handling duplicates):");
-        UnionArray(arr3, arr4); 
+        unionArray(arr3, arr4); 
 	} 
 	
 	/* Function prints union of arr1[] and arr2[] 
@@ -34,8 +34,8 @@ class FindUnion {
 				System.out.print(arr1[i++] + " "); 
 			else if (arr2[j] < arr1[i]) 
 				System.out.print(arr2[j++] + " "); 
-			else { 
-				System.out.print(arr2[j++] + " "); 
+			else if(arr2[j] == arr1[i]){ 
+				System.out.print(arr2[j++] + " "); //or print arr[i++] then j++
 				i++; 
 			} 
 		} 
@@ -62,13 +62,13 @@ class FindUnion {
 	         else if (arr2[j] < arr1[i]) 
 	             j++; 		//No print
 	         else { 
-	             System.out.print(arr2[j++] + " "); 
+	             System.out.print(arr2[j++] + " "); //or print arr[i++] then j++
 	             i++; 
 	         } 
 	     } 
 	 } 
 	
-	static void UnionArray(int arr1[], int arr2[]) { 
+	static void unionArray(int arr1[], int arr2[]) { 
 		// Taking max element present in either array 
 		
 		int m = max(arr1);	 
