@@ -1,0 +1,7 @@
+1. To run the application, just run it using 
+java BattleShip
+
+2. To supply input, put the input lines in the file "Input.txt" in resources source folder.
+
+3. A player is lost if all its ship are destroyed. 
+To check if a ship is destroyed, this application checks if its cells are destroyed using 'hitsRemaining' property. If value of this property is 0, it means cell is destroyed.
