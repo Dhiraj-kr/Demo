@@ -50,20 +50,9 @@ public class Test {
 		
 		Stream<Employee> resultingStream = employees.stream()
                 .filter(distinctByKey(Employee::getName));
-<<<<<<< HEAD
-		resultingStream.forEach(System.out::println);
-
-        List<Employee> wsListCopy = Optional.ofNullable(employees)
-                .map(List::stream)
-                .orElseGet(Stream::empty)
-                .skip(1)
-                .collect(Collectors.toList());
-
-    }
-=======
-		//resultingStream.forEach(System.out::println);
 	}
->>>>>>> Test
+
+		//resultingStream.forEach(System.out::println);
 	//T is employee
 	public static <T> Predicate<T> distinctByKey(Function<? super T, Object> keyExtractor)
     {
