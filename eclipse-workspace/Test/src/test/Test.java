@@ -224,6 +224,11 @@ public class Test {
 
 	  List<Object> listObject = new ArrayList<Object>();
 	  insertElements(listObject);
+	  
+	  ArrayList<String> color_list = new ArrayList< >(5);
+	  Object[] objArr = color_list.toArray();
+	  String[] rosterAsArray = color_list.toArray(new String[color_list.size()]);
+
 
 	}
 	

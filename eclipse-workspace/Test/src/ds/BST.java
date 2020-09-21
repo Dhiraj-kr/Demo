@@ -20,6 +20,8 @@ so that each lookup, insertion or deletion takes time proportional to the logari
 items stored in the tree. This is much better than the linear time required to find items by key 
 in an (unsorted) array, but slower than the corresponding operations on hash tables.
 
+BST is unbalanced.
+
 */
 
 
@@ -54,6 +56,8 @@ public class BST {
 		 System.out.println("Height of tree:"+getHeight(start));
 		 
 		 printLevelOrder();
+		 
+		 //WRITE DELETE NODE
 	 }
 
 	 private static void add(int i) {
@@ -111,7 +115,6 @@ public class BST {
 		  }
 	 }
 	 
-	 //Not Clear
 	 //Write iterative
 	 public static int getHeight(Node root){
     	if(root == null) return -1;	//or 0
@@ -122,12 +125,12 @@ public class BST {
 	nodes along the longest path from the root node 
 	down to the farthest leaf node.*/
 	 
-	 //we calculate height of each left and right tree for every node
+	 //we calculate height of each node based on left and right subtree. In the end, height of root is returned
 	 //then compare and return
 	static int height(Node root) 
 	{ 
 		if (root == null) 
-			return 0; 
+			return 0; //when left or right of node is null because root is called recursively using .left and .right
 		else
 		{ 
 			/* compute height of each subtree */

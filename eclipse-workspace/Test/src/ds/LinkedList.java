@@ -36,8 +36,6 @@ public class LinkedList {
 		System.out.println("Middle Node:"+getMiddle());
 		getMiddle2();
 		
-		System.out.println("List is cyclic:"+isCyclic());
-		
 		display();
 		reverse();
 		display();
@@ -48,10 +46,20 @@ public class LinkedList {
 		first.next=null;
 		reverse2(first,second);
 		display();
-		
+
 		System.out.println("\nCount of nodes:"+getCountRec(head));
 		
 		System.out.println("\n3rd Node:"+getNth(head,3));
+		
+		/*
+		 * node1=new Node(1); node2=new Node(2); node3=new Node(3); node4=new Node(4);
+		 * node5=new Node(5); node6=new Node(6); Node node7=new Node(7); Node node8=new
+		 * Node(8); Node node9=new Node(9); Node node10=new Node(10);
+		 * 
+		 * node1.next=node2; node2.next=node3; node3.next=node4; node4.next=node5;
+		 */
+		
+		System.out.println("List is cyclic:"+isCyclic());
 	}
 	
 	//1->2->3->4->5
@@ -102,11 +110,13 @@ public class LinkedList {
 	/*
 	 Two pointers, fast and slow is used while iterating over linked list. 
 	 Fast pointer moves two nodes in each iteration, while slow pointer moves to one node. 
-	 If linked list contains loop or cycle than 
+	 If linked list contains loop or cycle then 
 	 both fast and slow pointer will meet at some point during iteration. 
 	 If they don't meet and fast or slow will point to null, 
 	 then linked list is not cyclic and it doesn't contain any loop. 
 	 */
+	
+	//Other method is by using a visited flag
 	public static boolean isCyclic(){ 
 
 		Node fast = head; 

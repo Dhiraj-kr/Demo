@@ -1,8 +1,10 @@
 package stream;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -31,10 +33,24 @@ public class Test {
 		List<Employee> employees = Stream.generate(Employee::create)
                 .limit(5)
                 .collect(Collectors.toList());
+		
+		employees.forEach(System.out::println);
+		
+		System.out.println("--");
+		employees=new ArrayList<>();
+
+		List<Employee> wsListCopy = Optional.ofNullable(employees)
+                .map(List::stream)
+                .orElseGet(Stream::empty)
+                .skip(1)
+                .collect(Collectors.toList());
+		
+		wsListCopy.forEach(System.out::println);
 
 		
 		Stream<Employee> resultingStream = employees.stream()
                 .filter(distinctByKey(Employee::getName));
+<<<<<<< HEAD
 		resultingStream.forEach(System.out::println);
 
         List<Employee> wsListCopy = Optional.ofNullable(employees)
@@ -44,6 +60,10 @@ public class Test {
                 .collect(Collectors.toList());
 
     }
+=======
+		//resultingStream.forEach(System.out::println);
+	}
+>>>>>>> Test
 	//T is employee
 	public static <T> Predicate<T> distinctByKey(Function<? super T, Object> keyExtractor)
     {
