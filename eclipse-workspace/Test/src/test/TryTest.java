@@ -11,6 +11,12 @@ public class TryTest {
 		try {
 			return 0;
 		}
+		//catch(IOException  | Exception ex){
+		catch(Exception ex){
+		     System.out.print(ex);
+		     throw new MyException(ex.getMessage());
+		}
+		
 		finally {
 			return 1;
 		}
