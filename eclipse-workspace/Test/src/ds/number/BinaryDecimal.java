@@ -1,4 +1,4 @@
-package number;
+package ds.number;
 
 import java.util.Stack;
 

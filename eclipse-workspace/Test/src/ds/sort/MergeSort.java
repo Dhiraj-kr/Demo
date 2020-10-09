@@ -1,4 +1,4 @@
-package sort;
+package ds.sort;
 
 /* Java program for Merge Sort */
 //See Merge Sort interative way

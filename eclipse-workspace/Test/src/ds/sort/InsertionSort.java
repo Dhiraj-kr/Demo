@@ -1,4 +1,4 @@
-package sort;
+package ds.sort;
 
 class InsertionSort { 
     /*Function to sort array using insertion sort*/

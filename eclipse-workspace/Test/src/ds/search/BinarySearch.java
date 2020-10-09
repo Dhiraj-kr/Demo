@@ -1,4 +1,4 @@
-package search;
+package ds.search;
 
 public class BinarySearch {
 

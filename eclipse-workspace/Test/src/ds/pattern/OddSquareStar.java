@@ -1,4 +1,4 @@
-package pattern;
+package ds.pattern;
 
 public class OddSquareStar {
 

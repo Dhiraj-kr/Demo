@@ -1,4 +1,4 @@
-package number;
+package ds.number;
 
 public class MajorityElement {
 	/* Program for finding out majority element in an array */

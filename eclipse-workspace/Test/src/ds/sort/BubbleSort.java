@@ -1,4 +1,4 @@
-package sort;
+package ds.sort;
 
 class BubbleSort 
 { 

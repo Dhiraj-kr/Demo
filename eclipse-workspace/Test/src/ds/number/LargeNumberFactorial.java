@@ -1,4 +1,4 @@
-package number;
+package ds.number;
 
 /*
 5811*200=1162200

@@ -1,4 +1,4 @@
-package number;
+package ds.number;
 /*
  
   Next Greater Element

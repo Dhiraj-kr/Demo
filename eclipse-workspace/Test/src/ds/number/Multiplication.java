@@ -1,4 +1,4 @@
-package number;
+package ds.number;
 
 public class Multiplication {
 	//By adding a, b times

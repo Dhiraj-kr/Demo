@@ -1,4 +1,4 @@
-package string;
+package ds.string;
 
 //To be checked
 public class AnagramSubstringSearch {

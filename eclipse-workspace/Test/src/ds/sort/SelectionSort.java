@@ -1,4 +1,4 @@
-package sort;
+package ds.sort;
 
 //Java program for implementation of Selection Sort 
 class SelectionSort 

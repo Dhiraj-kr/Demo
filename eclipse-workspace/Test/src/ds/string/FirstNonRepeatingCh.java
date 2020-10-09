@@ -1,4 +1,4 @@
-package string;
+package ds.string;
 
 /*
  First non repeated character in the string 

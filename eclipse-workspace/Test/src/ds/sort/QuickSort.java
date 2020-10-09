@@ -1,4 +1,4 @@
-package sort;
+package ds.sort;
 
 //Java program for implementation of QuickSort 
 public class QuickSort 

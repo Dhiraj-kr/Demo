@@ -1,4 +1,4 @@
-package number;
+package ds.number;
 /*
  
  LCM(Least Common Multiple) is the smallest positive number which is divisble by both the numbers. For example lcm of 8 and 12 is 24 as 24 is divisble by both 8(8*3) and 12(12*2). 
