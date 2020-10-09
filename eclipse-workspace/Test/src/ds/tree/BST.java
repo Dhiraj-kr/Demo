@@ -1,4 +1,4 @@
-package ds;
+package tree;
 
 /*What is BST
 

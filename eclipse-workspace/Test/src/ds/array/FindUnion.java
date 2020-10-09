@@ -1,6 +1,7 @@
-package array;
+package ds.array;
 
-//Java program to find union of two sorted arrays 
+//Java program to find union(merge) of two sorted arrays 
+//Can be done using merge sort also
 
 class FindUnion { 
 	

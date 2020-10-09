@@ -1,4 +1,4 @@
-package ds;
+package java_collection;
 
 import java.util.LinkedList;
 import java.util.Map.Entry;

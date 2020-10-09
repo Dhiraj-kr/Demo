@@ -1,4 +1,4 @@
-package practice;
+package number;
 /*
  
   Next Greater Element

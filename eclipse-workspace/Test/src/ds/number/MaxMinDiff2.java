@@ -1,4 +1,4 @@
-package practice;
+package number;
 
 public class MaxMinDiff2 {
 

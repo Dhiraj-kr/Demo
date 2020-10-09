@@ -1,4 +1,4 @@
-package ds;
+package java_collection;
 
 public class TMHashMap {
     // for simplicity size is taken as 2^4

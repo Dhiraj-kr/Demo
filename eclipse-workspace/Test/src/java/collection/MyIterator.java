@@ -1,4 +1,4 @@
-package ds;
+package java_collection;
 
 public class MyIterator {
     

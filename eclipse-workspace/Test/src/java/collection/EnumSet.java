@@ -1,6 +1,6 @@
-package ds;
+package java_collection;
 
-import java.util.*;
+import java.util.Set;
 
 /**
  * Created by DM on 9/18/2020.

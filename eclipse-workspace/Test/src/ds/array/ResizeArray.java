@@ -1,4 +1,4 @@
-package array;
+package ds.array;
 
 import java.lang.reflect.Array;
 

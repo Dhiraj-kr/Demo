@@ -1,4 +1,4 @@
-package practice;
+package number;
 
 /*
  Given an array of n integers and q queries, print the number of next greater elements to the right of the given index element.

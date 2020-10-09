@@ -1,6 +1,5 @@
 package test;
 
-import java.io.IOException;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,7 +22,10 @@ import battleship.Point;
 public class Test {
 	public static void main(String arg[]) {
 		
-		
+		Long val=null;
+		if(val > 0) {
+			System.out.println("dtrue");
+		}
 	    System.out.format("%f, %1$+020.10f %n", Math.PI);
 
 	        
