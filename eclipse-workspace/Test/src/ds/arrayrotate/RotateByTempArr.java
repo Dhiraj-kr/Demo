@@ -1,4 +1,4 @@
-package arrayrotate;
+package ds.arrayrotate;
 
 public class RotateByTempArr {
 //Time Complexity: O(n), Space Complexity: O(d)

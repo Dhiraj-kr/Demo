@@ -1,7 +1,7 @@
 package ds.array;
 
 //Java program to find union(merge) of two sorted arrays 
-//Can be done using merge sort also
+//Subset of merge sort
 
 class FindUnion { 
 	
@@ -15,13 +15,13 @@ class FindUnion {
 		System.out.println("Union:");
 		printUnion(arr1, arr2, m, n); 
 		
-		System.out.println("\nIntersection:");
-		printIntersection(arr1, arr2, m, n); 
-		
 		int arr3[] = { 1, 2, 2, 2, 3 }; 
         int arr4[] = { 2, 3, 4, 5 }; 
-        System.out.println("\nUnion(Handling duplicates):");
+        System.out.println("\nUnion:");
         unionArray(arr3, arr4); 
+        
+        System.out.println("\nIntersection:");
+		printIntersection(arr1, arr2, m, n); 
 	} 
 	
 	/* Function prints union of arr1[] and arr2[] 
@@ -80,23 +80,22 @@ class FindUnion {
 		if (m > n) { 
 			ans = m; 
 		} 
-		else
+		else {
 			ans = n; 
+		}
 		
 		// Using another array for storing union elements of both arrays. 
 		// Assuming max element present in array is not more than 10^7 
 		int newtable[] = new int[ans + 1]; 
 		
-		// First element is always 
-		// present in final answer 
+		// First element is always present in final answer 
 		System.out.print(arr1[0] + " "); 
 		
 		// Incrementing the First element's count 
 		// in it's corresponding index in newtable 
 		++newtable[arr1[0]]; 
 		
-		// Starting traversing the first 
-		// array from 1st index till last 
+		// Starting traversing the first array from 2nd element till last 
 		for (int i = 1; i < arr1.length; i++) { 
 			// Checking whether current element 
 			// is not equal to it's previous element 

@@ -1,4 +1,4 @@
-package arrayrotate;
+package ds.arrayrotate;
 
 public class ReversalRotate {
 	// Java program for reversal algorithm of array rotation 

@@ -1,4 +1,4 @@
-package arrayrotate;
+package ds.arrayrotate;
 
 //Java program to rotate an array by d elements 
 
