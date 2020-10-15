@@ -1,4 +1,4 @@
-package test;
+package java_example.streamexample;
 
 import java.util.function.Function;
 

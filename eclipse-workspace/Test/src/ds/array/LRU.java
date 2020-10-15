@@ -1,4 +1,4 @@
-package test;
+package ds.array;
 
 import java.util.Deque;
 import java.util.Iterator;

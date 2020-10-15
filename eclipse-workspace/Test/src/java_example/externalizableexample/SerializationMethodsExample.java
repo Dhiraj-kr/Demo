@@ -1,4 +1,4 @@
-package test;
+package java_example.externalizableexample;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

@@ -1,11 +1,12 @@
 package java_example.collection;
 
+import java.util.EnumSet;
 import java.util.Set;
 
 /**
  * Created by DM on 9/18/2020.
  */
-    public class EnumSet {
+    public class EnumSetExample {
         private enum Color {
             RED(255, 0, 0), GREEN(0, 255, 0), BLUE(0, 0, 255);
             private int r;
@@ -13,15 +14,6 @@ import java.util.Set;
             private int b;
             private Color(int r, int g, int b) {
                 this.r = r; this.g = g; this.b = b;
-            }
-            public int getR() {
-                return r;
-            }
-            public int getG() {
-                return g;
-            }
-            public int getB() {
-                return b;
             }
         }
         public static void main(String args[]) {
