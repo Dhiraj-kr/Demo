@@ -1,4 +1,4 @@
-package java_example.externalizableexample;
+package java.externalizableexample;
 
 import java.io.Externalizable;
 import java.io.IOException;

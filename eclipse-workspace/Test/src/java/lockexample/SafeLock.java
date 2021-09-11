@@ -1,4 +1,4 @@
-package java_example.lockexample;
+package java.lockexample;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.Random;

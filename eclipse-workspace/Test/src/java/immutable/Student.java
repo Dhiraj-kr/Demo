@@ -1,4 +1,4 @@
-package java_example.immutable;
+package java.immutable;
 
 public final class Student //Class should not be inherited
 { 

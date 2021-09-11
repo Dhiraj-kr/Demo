@@ -1,4 +1,4 @@
-package java_example.concurrentexample;
+package java.concurrentexample;
 
 import java.io.BufferedReader;
 import java.io.File;

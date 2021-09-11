@@ -1,4 +1,4 @@
-package java_example.synchronizationexample;
+package java.synchronizationexample;
 
 import java.util.Random;
 

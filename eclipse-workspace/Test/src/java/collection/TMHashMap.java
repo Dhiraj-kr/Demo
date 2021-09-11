@@ -1,4 +1,4 @@
-package java_example.collection;
+package java.collection;
 
 public class TMHashMap {
     // for simplicity size is taken as 2^4

@@ -1,4 +1,4 @@
-package java_example.extrinsiclock;
+package java.extrinsiclock;
 
 public class Consumer implements Runnable{
 

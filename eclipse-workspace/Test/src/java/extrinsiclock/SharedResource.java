@@ -1,4 +1,4 @@
-package java_example.extrinsiclock;
+package java.extrinsiclock;
 
 import java.util.ArrayList;
 import java.util.List;

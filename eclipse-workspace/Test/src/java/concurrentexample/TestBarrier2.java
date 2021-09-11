@@ -1,4 +1,4 @@
-package java_example.concurrentexample;
+package java.concurrentexample;
 
 import java.io.FileNotFoundException;
 import java.util.concurrent.BrokenBarrierException;

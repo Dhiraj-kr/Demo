@@ -1,4 +1,4 @@
-package java_example.synchronizationexample;
+package java.synchronizationexample;
 
 public class Consumer implements Runnable{
 

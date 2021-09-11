@@ -1,4 +1,4 @@
-package java_example.genericsexample;
+package java.genericsexample;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;

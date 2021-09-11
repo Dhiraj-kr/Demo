@@ -1,4 +1,4 @@
-package java_example.immutable;
+package java.immutable;
 
 import java.util.Optional;
 import java.util.Set;

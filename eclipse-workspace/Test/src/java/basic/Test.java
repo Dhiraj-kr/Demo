@@ -1,9 +1,10 @@
-package java_example.basic;
+package java.basic;
 
 import test.TestEnum;
 
 interface Parent{
 	void bar();
+	
 	String toString();		//Its inherited from Object by default, so no need
 	//be implemented by implementor of interface
 }

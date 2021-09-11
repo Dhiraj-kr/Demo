@@ -1,4 +1,4 @@
-package java_example.streamexample;
+package java.streamexample;
 
 import java.io.Serializable;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package java_example.concurrentexample;
+package java.concurrentexample;
 
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;

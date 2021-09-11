@@ -1,4 +1,4 @@
-package java_example.dateexample;
+package java.dateexample;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

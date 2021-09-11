@@ -1,4 +1,4 @@
-package java_example.concurrentexample;
+package java.concurrentexample;
 
 import java.util.Arrays;
 import java.util.List;

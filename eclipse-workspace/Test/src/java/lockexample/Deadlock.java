@@ -1,4 +1,4 @@
-package java_example.lockexample;
+package java.lockexample;
 
 public class Deadlock {
     static class Friend {

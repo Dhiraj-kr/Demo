@@ -1,4 +1,4 @@
-package java_example.design;
+package java.design;
 
 public class BuilderPatternExample {
   
